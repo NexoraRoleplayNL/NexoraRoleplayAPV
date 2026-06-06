@@ -23,6 +23,7 @@ Wij verwachten dat iedere speler zich voorafgaand aan deelname volledig vertrouw
 | [APV](apv.md) | Algemene Plaatselijke Verordening van Nexora |
 | [Straffenlijst](straffenlijst.md) | Overzicht van sancties en straffen |
 
----
+------
+
 
 ![Nexora Banner](assets/banner.png)

@@ -1,0 +1,49 @@
+name: Discord Notify
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send Discord Embed
+        run: |
+          curl -H "Content-Type: application/json" \
+          -X POST \
+          -d "{
+            \"embeds\": [
+              {
+                \"title\": \"🚀 Nexora Roleplay - APV Update\",
+                \"description\": \"Er is een nieuwe wijziging gedaan in het wetboek.\",
+                \"color\": 5814783,
+                \"fields\": [
+                  {
+                    \"name\": \"👤 Auteur\",
+                    \"value\": \"${{ github.actor }}\",
+                    \"inline\": true
+                  },
+                  {
+                    \"name\": \"📦 Branch\",
+                    \"value\": \"${{ github.ref_name }}\",
+                    \"inline\": true
+                  },
+                  {
+                    \"name\": \"🔗 Commit\",
+                    \"value\": \"https://github.com/NexoraRoleplayNL/NexoraRoleplayAPV/commit/${{ github.sha }}\"
+                  },
+                  {
+                    \"name\": \"🌍 Website\",
+                    \"value\": \"https://NexoraRoleplayNL.github.io/NexoraRoleplayAPV/\"
+                  }
+                ],
+                \"footer\": {
+                  \"text\": \"NexoraRP • 2026\"
+                }
+              }
+            ]
+          }" \
+          ${{ secrets.DISCORD_WEBHOOK }}
