@@ -28,7 +28,7 @@ jobs:
                 "fields": [
                   {
                     "name": "Wijziging:",
-                    "value": "```\\n${{ github.event.head_commit.message }}\\n```"
+                    "value": "```\n${{ github.event.head_commit.message }}\n```"
                   }
                 ],
 
