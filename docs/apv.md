@@ -27,7 +27,7 @@
 1. De straffen zijn onderverdeeld in de volgende categorieën:
 
 | Categorie | Straf |
-|---|---|
+|---|---|-
 | **Categorie 1** | Waarschuwing + taakstraf *(max. 3 waarschuwingen per maand, daarna verzwaring naar cat. 2)* |
 | **Categorie 2** | Ban van 1 dag, of waarschuwing met taakstraf |
 | **Categorie 3** | Ban van 2 dagen, of waarschuwing met taakstraf |

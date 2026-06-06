@@ -30,10 +30,6 @@ jobs:
                   "value": "Nexora Development",
                   "inline": true
                   }
-                  {
-                    \"name\": \"Nexora APV\",
-                    "value": "[Klik hier om de APV te openen](https://NexoraRoleplayNL.github.io/NexoraRoleplayAPV/)"
-                  }
                 ],
                 \"footer\": {
                   \"text\": \"Nexora Roleplay • 2026\"
