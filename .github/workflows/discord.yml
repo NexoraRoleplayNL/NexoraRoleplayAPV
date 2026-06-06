@@ -15,16 +15,19 @@ jobs:
           curl -H "Content-Type: application/json" \
           -X POST \
           -d '{
-            "content": "<@&1417241810379608204>",
+            "content": "<@>",
             "embeds": [
               {
-                "title": "🚨 Nexora APV Update",
-                "description": "${{ github.event.head_commit.message }}",
+                "title": "🚨 Nexora Wetboek Wijzigingen",
                 "color": 14859818,
                 "thumbnail": {
                   "url": "https://raw.githubusercontent.com/NexoraRoleplayNL/NexoraRoleplayAPV/main/docs/assets/logo.png"
                 },
                 "fields": [
+                  {
+                    "name": "📝 Wijziging",
+                    "value": "${{ github.event.head_commit.message }}"
+                  },
                   {
                     "name": "👤 Door",
                     "value": "Nexora Development",
