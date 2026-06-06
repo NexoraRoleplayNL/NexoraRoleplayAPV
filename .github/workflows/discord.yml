@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Nexora Roleplay
+      - name: Discord Notify
         run: |
           curl -H "Content-Type: application/json" \
           -X POST \
@@ -18,22 +18,25 @@ jobs:
             \"content\": \"<@&1417241810379608204>\",
             \"embeds\": [
               {
-                \"title\": \"🚨 Nexora APV Update\",
+                \"title\": \"Nexora APV Update\",
                 \"description\": \"${{ github.event.head_commit.message }}\",
-                \"color\": 5814783,
+                \"color\": 14859818,
+                \"thumbnail\": {
+                  \"url\": \"https://raw.githubusercontent.com/NexoraRoleplayNL/NexoraRoleplayAPV/main/docs/assets/logo.png\"
+                },
                 \"fields\": [
+                {
+                  "name": "Gwijzigd Door",
+                  "value": "Nexora Development",
+                  "inline": true
+                  }
                   {
-                    \"name\": \"👤 Door\",
-                    \"value\": \"${{ github.actor }}\",
-                    \"inline\": true
-                  },
-                  {
-                    \"name\": \"🌍 Website\",
-                    \"value\": \"https://NexoraRoleplayNL.github.io/NexoraRoleplayAPV/\"
+                    \"name\": \"Nexora APV\",
+                    "value": "[Klik hier om de APV te openen](https://NexoraRoleplayNL.github.io/NexoraRoleplayAPV/)"
                   }
                 ],
                 \"footer\": {
-                  \"text\": \"Nexora Roleplay • APV System\"
+                  \"text\": \"Nexora Roleplay • 2026\"
                 }
               }
             ]
