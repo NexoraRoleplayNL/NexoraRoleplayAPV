@@ -1,0 +1,54 @@
+:root {
+    --md-primary-fg-color: #d4af37;
+    --md-accent-fg-color: #f5d36a;
+}
+
+.md-header {
+    background: #0b0b0b;
+}
+
+.md-tabs {
+    background: #111111;
+}
+
+.md-main {
+    background: #080808;
+}
+
+.md-typeset h1 {
+    color: #d4af37;
+}
+
+.md-typeset h2 {
+    color: #e8c765;
+}
+
+.md-typeset h3 {
+    color: #f5d36a;
+}
+
+.md-nav__title {
+    color: #d4af37;
+}
+
+.md-footer {
+    background: #0b0b0b;
+}
+
+.md-button {
+    border-color: #d4af37;
+}
+
+.md-button:hover {
+    background: #d4af37;
+}
+
+.md-header__title {
+    color: #d4af37 !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.md-nav--primary .md-nav__title {
+    display: none;
+}

@@ -1,0 +1,28 @@
+site_name: Nexora Roleplay Wetboek
+
+theme:
+  name: material
+  logo: assets/logo.png
+
+  palette:
+    - scheme: slate
+      primary: amber
+      accent: amber
+
+  features:
+  - navigation.sections
+  - navigation.expand
+  - navigation.top
+
+markdown_extensions:
+  - admonition
+  - tables
+
+extra_css:
+  - assets/stylesheets/assets.css
+
+nav:
+  - Nexora - Introductie: index.md
+  - Nexora - APV: apv.md
+  - Nexora - Wetboek: wetboek.md
+  - Nexora - Straffenlijst: straffenlijst.md
