@@ -29,11 +29,6 @@ jobs:
                   {
                     "name": "Wijziging:",
                     "value": "```\\n${{ github.event.head_commit.message }}\\n```"
-                  },
-                  {
-                    "name": "Door:",
-                    "value": "Nexora Development",
-                    "inline": true
                   }
                 ],
 
