@@ -14,27 +14,27 @@ jobs:
         run: |
           curl -H "Content-Type: application/json" \
           -X POST \
-          -d "{
-            \"content\": \"<@&1417241810379608204>\",
-            \"embeds\": [
+          -d '{
+            "content": "<@&1417241810379608204>",
+            "embeds": [
               {
-                \"title\": \"Nexora APV Update\",
-                \"description\": \"${{ github.event.head_commit.message }}\",
-                \"color\": 14859818,
-                \"thumbnail\": {
-                  \"url\": \"https://raw.githubusercontent.com/NexoraRoleplayNL/NexoraRoleplayAPV/main/docs/assets/logo.png\"
+                "title": "🚨 Nexora APV Update",
+                "description": "${{ github.event.head_commit.message }}",
+                "color": 14859818,
+                "thumbnail": {
+                  "url": "https://raw.githubusercontent.com/NexoraRoleplayNL/NexoraRoleplayAPV/main/docs/assets/logo.png"
                 },
-                \"fields\": [
-                {
-                  "name": "Gwijzigd Door",
-                  "value": "Nexora Development",
-                  "inline": true
+                "fields": [
+                  {
+                    "name": "👤 Door",
+                    "value": "Nexora Development",
+                    "inline": true
                   }
                 ],
-                \"footer\": {
-                  \"text\": \"Nexora Roleplay • 2026\"
+                "footer": {
+                  "text": "Nexora Roleplay • 2026"
                 }
               }
             ]
-          }" \
+          }' \
           ${{ secrets.DISCORD_WEBHOOK }}
