@@ -36,7 +36,7 @@
 | Art. 7 | No Value of Life (NVOL) | Categorie 2 |
 | Art. 8 | ERP (Erotische Roleplay) | Categorie 7 |
 | Art. 9 | Zelfmoord-RP | Categorie 8 + 200 mnd celstraf |
-| Art. 10 | Metagaming | Categorie 1 |
+| Art. 10 | Metagaming | Categorie 1 | 
 | Art. 10 | Eigenaar verboden Discord-server | Categorie 7 |
 | Art. 11 | Exploits misbruiken | Categorie 7 |
 | Art. 12 | Cheats gebruiken | Categorie 7 |

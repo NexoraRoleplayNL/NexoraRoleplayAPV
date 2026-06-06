@@ -10,30 +10,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Send Discord Embed
+      - name: Nexora Roleplay
         run: |
           curl -H "Content-Type: application/json" \
           -X POST \
           -d "{
+            \"content\": \"<@&1417241810379608204>\",
             \"embeds\": [
               {
-                \"title\": \"🚀 Nexora Roleplay - APV Update\",
-                \"description\": \"Er is een nieuwe wijziging gedaan in het wetboek.\",
+                \"title\": \"🚨 Nexora APV Update\",
+                \"description\": \"${{ github.event.head_commit.message }}\",
                 \"color\": 5814783,
                 \"fields\": [
                   {
-                    \"name\": \"👤 Auteur\",
+                    \"name\": \"👤 Door\",
                     \"value\": \"${{ github.actor }}\",
                     \"inline\": true
-                  },
-                  {
-                    \"name\": \"📦 Branch\",
-                    \"value\": \"${{ github.ref_name }}\",
-                    \"inline\": true
-                  },
-                  {
-                    \"name\": \"🔗 Commit\",
-                    \"value\": \"https://github.com/NexoraRoleplayNL/NexoraRoleplayAPV/commit/${{ github.sha }}\"
                   },
                   {
                     \"name\": \"🌍 Website\",
@@ -41,7 +33,7 @@ jobs:
                   }
                 ],
                 \"footer\": {
-                  \"text\": \"NexoraRP • 2026\"
+                  \"text\": \"Nexora Roleplay • APV System\"
                 }
               }
             ]
