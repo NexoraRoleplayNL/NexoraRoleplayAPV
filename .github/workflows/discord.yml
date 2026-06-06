@@ -15,7 +15,7 @@ jobs:
           curl -H "Content-Type: application/json" \
           -X POST \
           -d '{
-            "content": "<@>",
+            "content": "<@&1417241810379608204>
             "embeds": [
               {
                 "title": "er is een nieuwe wijzing in het wetboek/apv uitgevoerd!",
