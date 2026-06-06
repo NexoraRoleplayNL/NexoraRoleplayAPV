@@ -15,7 +15,7 @@ jobs:
           curl -H "Content-Type: application/json" \
           -X POST \
           -d '{
-            "content": "<@&1417241810379608204>",
+            "content": "<@>",
             "embeds": [
               {
                 "title": "🚨 Nexora Wetboek Wijzigingen",
@@ -28,12 +28,11 @@ jobs:
                 "fields": [
                   {
                     "name": "📝 Wijziging",
-                    "value": "\n${{ github.event.head_commit.message }}\n"
+                    "value": "```\\n${{ github.event.head_commit.message }}\\n```"
                   },
-
                   {
                     "name": "👤 Door",
-                    "value": "\nNexora Development\n",
+                    "value": "Nexora Development",
                     "inline": true
                   }
                 ],
