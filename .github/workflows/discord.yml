@@ -18,7 +18,7 @@ jobs:
             "content": "<@>",
             "embeds": [
               {
-                "title": "🚨 Nexora Wetboek Wijzigingen",
+                "title": "er is een nieuwe wijzing in het wetboek doorgevoerd!",
                 "color": 14859818,
 
                 "thumbnail": {
@@ -27,11 +27,11 @@ jobs:
 
                 "fields": [
                   {
-                    "name": "📝 Wijziging",
+                    "name": "Wijziging:",
                     "value": "```\\n${{ github.event.head_commit.message }}\\n```"
                   },
                   {
-                    "name": "👤 Door",
+                    "name": "Door:",
                     "value": "Nexora Development",
                     "inline": true
                   }
