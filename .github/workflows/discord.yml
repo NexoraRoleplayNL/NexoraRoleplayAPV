@@ -18,7 +18,7 @@ jobs:
             "content": "<@>",
             "embeds": [
               {
-                "title": "er is een nieuwe wijzing in het wetboek doorgevoerd!",
+                "title": "er is een nieuwe wijzing in het wetboek/apv uitgevoerd!",
                 "color": 14859818,
 
                 "thumbnail": {
