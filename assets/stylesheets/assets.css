@@ -52,3 +52,15 @@
 .md-nav--primary .md-nav__title {
     display: none;
 }
+
+.md-header__button {
+    color: #ffffff !important;
+}
+
+.md-header__button.md-icon {
+    color: #ffffff !important;
+}
+
+.md-header__button svg {
+    fill: #ffffff !important;
+}
