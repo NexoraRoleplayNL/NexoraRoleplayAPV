@@ -64,3 +64,12 @@
 .md-header__button svg {
     fill: #ffffff !important;
 }
+
+.md-search__input {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+}
+
+.md-search__input::placeholder {
+    color: #aaaaaa !important;
+}
